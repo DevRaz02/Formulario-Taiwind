@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form/Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-indigo-300 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md space-y-4">
+      <h2 class="text-2xl font-bold text-center">Formulário Tailwind</h2>
+
+      <form class="space-y-4">
+        <div class="flex flex-col">
+          <label for="nome" class="text-sm font-medium text-gray-700"
+            >Nome:</label
+          >
+          <input
+            id="nome"
+            type="text"
+            placeholder="Digite seu nome"
+            class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="email" class="text-sm font-medium text-gray-700"
+            >E-mail:</label
+          >
+          <input
+            id="email"
+            type="email"
+            placeholder="Digite seu e-mail"
+            class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="mensagem" class="text-sm font-medium text-gray-700"
+            >Mensagem:</label
+          >
+          <textarea
+            id="mensagem"
+            rows="4"
+            placeholder="Digite sua mensagem"
+            class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          ></textarea>
+        </div>
+
+        <div class="flex flex-col">
+          <label for="genero" class="text-sm font-medium text-gray-700"
+            >Gênero:</label
+          >
+          <select
+            id="genero"
+            class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 transition"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
