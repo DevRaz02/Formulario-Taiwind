@@ -73,19 +73,19 @@
     <script>
       document.querySelector("form").addEventListener("submit", function (e) {
         e.preventDefault();
+
+        const dados = {
+          nome: document.querySelector("#nome").value,
+          email: document.querySelector("#email").value,
+          mensagem: document.querySelector("#mensagem").value,
+          genero: document.querySelector("#genero").value,
+        };
+
+        console.log("dados enviados:", dados);
+
+        alert("Dados enviados com sucesso!");
+        this.reset();
       });
-
-      const dados = {
-        nome: document.querySelector("#nome").value,
-        email: document.querySelector("#email").value,
-        mensagem: document.querySelector("#mensgem").value,
-        genero: document.querySelector("#genero").value,
-      };
-
-      console.log("dados enviados:", dados);
-
-      alert("Dados enviados com sucesso!");
-      this.resrt();
     </script>
   </body>
 </html>
