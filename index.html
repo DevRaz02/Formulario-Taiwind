@@ -83,7 +83,9 @@
 
         console.log("dados enviados:", dados);
 
-        alert("Dados enviados com sucesso!");
+        alert(
+          `Dados enviados com sucesso!\n\n${dados.nome}\n${dados.email}\n${dados.mensagem}\n${dados.genero}`
+        );
         this.reset();
       });
     </script>
